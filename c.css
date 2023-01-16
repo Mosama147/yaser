@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+
+*{
+
+    box-sizing: border-box;
+
+}
+
+body
+  {
+    /* background-image: url(bg.jpg); */
+    /* background-color: rgb(0, 0, 0); */
+    
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+
+.bg{
+  display: flex;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    position: absolute;
+    justify-content: center;
+    left: 0px;
+    box-shadow: inset -1px 1px 3px 20px #f7dc08
+    
+
+
+}
+header{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 70px;
+
+}  
+
+
+  p {
+    font-family: 'Cairo', sans-serif;
+    margin-top: 0%;
+    margin-bottom: 20px;
+    padding: 25px;
+    font-weight: 50px;
+    text-transform: uppercase;
+    width: 100%;
+    font-size: 3em;
+    letter-spacing: 9px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #ffffff, #ffffff, #f7dc08);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 9s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+
+.container
+  {
+
+    margin-left: 10%;
+    width: 80%;
+    height: 530px;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    align-content: center;
+    border-radius: 157px;
+    box-shadow: 0px 0px 8px 7px rgb(247 220 8);
+
+  }
+@media (max-width:1199px)
+{
+
+.container {
+  height: 580px;
+}
+
+
+}
+.bx1
+  {
+    background-image: url(8.jpg);
+    background-size: cover;
+    width: 40%;
+    border-radius: 90px 0px 0px 10px;
+    padding: 25px;
+    align-content: center;
+    text-align: center;
+    font-family: 'Cairo', sans-serif;
+
+    
+  }
+.box1 hr {border-color: red;}
+  .bx1 h2 
+  {
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    letter-spacing: 2px;
+    text-decoration: solid;
+    margin: auto;
+
+  }
+  
+
+.contact-form
+  {
+    /* background-color: rgb(255, 255, 255); */
+    /* background-image: url(p.jpg); */
+    background-color: white;
+    background-size: cover;
+    width: 60%;
+    border-radius: 70px 90px 90px 10px;; 
+    box-shadow: inset 0px 0px 5px 2px rgb(0 0 0);;
+    position: relative;
+    display: inline-block;
+    font-family: 'Cairo', sans-serif;
+    justify-content: center;
+    
+    justify-content:center;
+   
+    max-height: fit-content;
+
+    
+  }
+  
+  
+
+  .contact-form .textbox:hover , .contact-form .textarea:hover  
+  {
+  
+    border-color: #000000;
+    outline: none;
+    width: calc(82% - 5px);
+    border-radius: 15px;
+    transition: 0.80s;
+  
+   
+  }
+
+  
+    
+  .contact-form h2{
+    color: #f7dc08;
+    text-align: center;
+    font-size: 27px;
+    text-transform: uppercase;
+    text-decoration: solid;
+    letter-spacing: 6px;
+    text-shadow: 0px 0px 2px #000000;
+    margin-top: 5px;
+  
+  }
+  
+  .contact-form .textbox {
+  
+    height: 35px;
+    font-weight: bold;
+  
+  }
+  
+  
+  .contact-form .textarea {
+  
+  font-weight: bold;
+  min-height: 200px;
+  max-height: 400px;
+  resize: vertical;
+  border: none;
+  
+  } 
+  
+  .contact-form .textbox,
+  .contact-form .textarea{
+  
+    border: #104347 2px solid;
+    direction: rtl;
+    display: inline-block;
+    font-family: 'Cairo', sans-serif;
+    background: #ffffff;
+    color: #000000;
+    width: calc(80% - 5px);
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+  
+    
+  }
+  
+  /* --------------
+  -----BUTTON----
+  ----------- -----*/
+  
+  .contact-form #btn {
+  
+      background: #000000;
+      padding-left: 15px;
+      color: #f7dc08;
+      border: none;
+      width: 192px;
+      height: 50px;
+      font-size: 20px;
+      font-weight: 600px;
+      text-transform: uppercase;
+      letter-spacing: 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 1.3s;
+      
+  }
+  
+   /* .contact-form #btn:hover {
+    width: 194px; 
+    letter-spacing: 12px; 
+      
+  
+  } */
+
+  /*
+   ------------------------
+  -------select box--------
+  -------------------------
+   */
+  
+  .select-box {
+    position: relative;
+    display: inline-block;
+    width:calc(80% - 5px);
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: #000000;
+    color: #f7dc08;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+    position: absolute;
+    z-index: 100;
+  }
+  
+  .selected {
+    
+    border-radius: 9px;
+    border: #000000 2px solid;
+    margin-bottom: 15px;
+    position: relative;
+    order: 0;
+
+    direction: rtl;
+    font-family: 'Cairo', sans-serif;
+    background: #ffffff;
+    /* color: #737a7a; */
+    text-align: justify;
+    font-weight: bold;
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("down-arrow.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 100%;
+    width: 25px;
+    top: 5px;
+    left: 13px;
+    transition: all 0.4s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 282px;
+    opacity: 1;
+    overflow-y: scroll;
+    margin-top: 104px;
+    
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    
+    transform: rotateX(180deg);
+    top: -6px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 8px;
+    background:#000000;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: #f7dc08;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 2px 12px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: #414b57;
+    border: solid 1px #f7dc08;
+    border-radius:8px;
+
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
+  
+  /*
+  -------------------------------
+  --------- Searchbox -----------
+  -------------------------------
+  */
+  
+  .search-box input {
+    width: 100%;
+    padding: 9px 16px;
+    font-family: 'Cairo', sans-serif;
+    font-size: 16px;
+    position: inherit;
+    border-radius: 12px 12px 0 0;
+    z-index: 100;
+    border: 5px solid #000000;
+  
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s;
+  }
+  
+  .search-box input:focus {
+    outline: none;
+  }
+  
+  .select-box .options-container.active ~ .search-box input {
+    opacity: 1;
+    pointer-events: auto;
+  } 
+
+  
